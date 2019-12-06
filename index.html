@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/30b69abfe7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Portfolio</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-container">
+            <img class="avatar" src="assets/img/avatar.jpg" alt="avatar">
+            <div class="contacts">
+                <h1 class="name">Sergey Vasilev</h1>
+                <div class="github">
+                    <span class="github-title">Github: </span>
+                    <a href="https://github.com/sergeyv1987">@SergeyV1987</a>
+                </div>
+                <div class="email">
+                    <span class="email-title">Email: </span>
+                    <a href="mailto:svasilev1987@mail.ru">svasilev1987@mail.ru</a>
+                </div>
+                <div class="vk">
+                    <span class="vk-title">VK: </span>
+                    <a href="https://vk.com/chaaarge">Сергей Васильев</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="education">
+            <div class="education-section-container">
+                <div class="education-section-title-container">
+                    <h2 class="education-section-title">Education</h2>
+                    <span class="education-section-control"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <ul class="education-info-container hidden">
+                    <li class="education-item">
+                        <span class="education-item-title">NNGU, Management</span>
+                        <span class="education-item-time">2004 - 2009</span>
+                    </li>
+                    <li class="education-item">
+                        <span class="education-item-title">NIIT</span>
+                        <span class="education-item-time">2017</span>
+                    </li>
+                    <li class="education-item">
+                        <span class="education-item-title">RSSchool</span>
+                        <span class="education-item-time">2019</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="projects-section-container">
+                <h2 class="projects-section-title">Projects</h2>
+                <div class="slider">
+                    <div class="slider-container">
+                        <div class="projects-item active">
+                            <div class="projects-item-info">
+                                <button class="button-description">Show description</button>
+                                <div class="projects-item-data">
+                                    <h3 class="projects-item-name">Theyalow</h3>
+                                    <ul class="projects-item-description">
+                                        <li class="projects-item-description-item">Adaptive</li>
+                                        <li class="projects-item-description-item">SVG</li>
+                                        <li class="projects-item-description-item">Slider</li>
+                                        <li class="projects-item-description-item">Video</li>
+                                    </ul>
+                                </div>
+                                <a class="project-item-link" href="https://github.com/SergeyV1987/theyalow"><img class="project-item-image" src="assets/img/theyalow.jpg" alt="project"></a>
+                            </div>
+                        </div>
+                        <div class="projects-item">
+                            <div class="projects-item-info">
+                                <button class="button-description">Show description</button>
+                                <div class="projects-item-data" >
+                                    <h3 class="projects-item-name">Repair-design-project</h3>
+                                    <ul class="projects-item-description">
+                                        <li class="projects-item-description-item">Responsive</li>
+                                        <li class="projects-item-description-item">SVG</li>
+                                        <li class="projects-item-description-item">Slider</li>
+                                        <li class="projects-item-description-item">Video</li>
+                                    </ul>
+                                </div>
+                                <a class="project-item-link" href="https://github.com/SergeyV1987/repair-design-project"><img class="project-item-image" src="assets/img/repair.jpg" alt="project"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control left">
+                        <div class="arrow left">&lt;</div>
+                    </div>
+                    <div class="control right">
+                        <div class="arrow right">&gt;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

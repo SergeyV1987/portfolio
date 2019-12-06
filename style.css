@@ -1,0 +1,392 @@
+.wrapper {
+    max-width: 900px;
+    height: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    user-select: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #a95f9d;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    padding: 0 2%;
+    height: 90%;
+}
+
+.avatar {
+    height: 100%;
+    border-radius: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: #572c50;
+}
+
+.name {
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #2c1929;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.github,
+.email,
+.vk {
+    padding: 7px;
+    font-size: 18px;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.education-section-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    background-color: #7F8181;
+}
+
+.education-section-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 2% 5% 1%;
+    height: 50px;
+    font-size: 30px;
+    color: #2c1929;
+    background-color: #572c50;
+    cursor: pointer;
+}
+
+.education-info-container {
+    width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    box-shadow: 0 5px 5px #572c50;
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5% 0;
+}
+
+.hidden {
+    height: 0;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.projects-section-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.projects-section-title {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 2% 5% 1%;
+    height: 50px;
+    font-size: 30px;
+    color: #2c1929;
+    background-color: #572c50;
+}
+
+.education-section-control {
+    transition: all 0.2s linear;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    margin-bottom: 15px;
+}
+
+.slider {
+    position: absolute;
+    top: 445%;
+    left: 50%;
+    width: 700px;
+    transform: translate(-50%, -50%);
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects-item {
+    display: none;
+    position: relative;
+    animation: 0.5s ease-in-out;
+    margin: 0 auto;
+}
+
+.active,
+.next {
+    display: block;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.projects-item-info {
+    margin: 50px 10%;
+    border: 1.5px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-description {
+    width: 180px;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.projects-item-data {
+    margin: 10px;
+}
+
+.projects-item-name {
+    padding: 10px 10px;
+    font-size: 25px;
+    color: #2c1929;
+}
+
+.projects-item-description {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.projects-item-description-item {
+    padding: 5px 7px;
+}
+
+.project-item-image {
+    width: 300px;
+    height: 400px;
+    margin: 5px 5px 0;
+}
+
+.control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    cursor: pointer;
+}
+
+.control.left {
+    left: 0;
+    right: auto;
+}
+
+.control.right {
+    right: 0;
+    left: auto;
+}
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: #2c1929;
+}
+
+.arrow.right {
+    right: 15%;
+}
+
+.arrow.left {
+    left: 15%;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    .wrapper {
+        box-shadow: 0px 10px 10px #572c50;
+    }
+
+    .slider {
+        box-shadow: 0px 5px 5px #572c50;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        height: 1140px;
+    }
+
+    .header {
+        height: 390px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .avatar {
+        height: 200px;
+        margin: 10px;
+    }
+
+    .projects-item-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .projects-item-description {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project-item-image {
+        width: 280px;
+        height: 300px;
+    }
+
+    .projects-item-name {
+        text-align: center;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 426px) {
+    .wrapper {
+        height: 1240px;
+    }
+
+    .control {
+        display: none;
+    }
+
+    .projects-item-info {
+        margin: 20px 0;
+        border: none;
+    }
+
+    .project-item-image {
+        width: 100%;
+        height: 500px;
+        margin: 5px 0;
+    }
+
+    .slider {
+        top: 560%;
+    }
+
+    .projects-item-data {
+        position: absolute;
+        top: 150px;
+        width: 80%;
+        height: 230px;
+    }
+
+    .projects-item-name {
+        font-size: 32px;
+        color: #2c1929;
+    }
+
+    .projects-item-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 427px) {
+    .button-description {
+        display: none;
+    }
+}
